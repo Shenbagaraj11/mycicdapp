@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Installing application dependencies...
       - mkdir /home/ec2-user/app
-      - cd app
+      - cd /home/ec2-user/app
       - npm install
   build:
     commands:
