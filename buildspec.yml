@@ -6,6 +6,7 @@ phases:
       nodejs: 14
     commands:
       - echo Installing application dependencies...
+      - mkdir /home/ec2-user/app
       - cd app
       - npm install
   build:
