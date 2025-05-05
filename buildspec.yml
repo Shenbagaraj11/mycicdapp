@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Installing application dependencies...
+      - cd app
+      - npm install
+  build:
+    commands:
+      - echo Build step (optional for basic Node.js app)
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'app'
